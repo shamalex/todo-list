@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container-fluid todo-list"><div class="noresults">Ничего не добавлено</div></div>
+
+        <div class="container-fluid">
+            <div class="row edit-form">
+                <div class="col-sm-4">
+                    <div class="item__control">
+                        <button type="button" id="create" class="btn btn-primary">Добавить</button>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-sm-4">
+                    <div class="item__control">
+                        <input type="checkbox" id="priority_sort" disabled><label for="priority_sort">по приоритету</label><br>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-sm-4">
+                    <div class="item__control">
+                        <select name="projects" id="projects" class="form-control">
+                            <option value="all">Все</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="name_todo">Заголовок задачи</label>
+                            <input type="text" name="name_todo" id="name_todo" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name_project">Название проекта</label>
+                            <input type="text" name="name_project" id="name_project" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name_priority">Приоритет</label>
+                            <select name="name_priority" id="name_priority" class="form-control">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name_desc">Описание</label>
+                            <textarea name="name_desc" id="name_desc" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
+                            <button type="reset" id="cancel" class="btn btn-danger">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

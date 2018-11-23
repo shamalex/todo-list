@@ -1,0 +1,36 @@
+body {
+  margin: 2em auto;
+  max-width: 600px;
+}
+
+form div {
+    margin-bottom: 0.5em;
+}
+form div label, form div input {
+    display: block;
+    margin-bottom: 0.3em;
+}
+.item {
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+}
+.todo-list {
+    max-height: 460px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+.item__desc {
+    display: none;
+}
+form, .edit-form {
+   display: none;
+}
+.noresults {
+    border: 2px dashed gray;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 40px;
+}
